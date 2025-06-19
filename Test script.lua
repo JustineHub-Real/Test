@@ -1,3 +1,4 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEverydayDev/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "Kaze Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local main = Window:MakeTab({
@@ -6,11 +7,11 @@ local main = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = main:AddSection({
+main:AddSection({
 	Name = "Speed 5 plus"
 })
 
-Tabs.main:Button({
+main:Button({
     Title = "Button test",
     Desc = "",
     Callback = function()
